@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>cara</title>
+</head>
+<body onresize="mobile()" onload="mobile()">
+
+
+<!-- navbar start-->
+<nav id="nav" class=" navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-bar-to-r">
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contact</a>
+                </li>
+
+                <li onclick="popup()" class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-bag-shopping"></i>
+                        <p class="onCartNum">0</p>
+                    </a>
+                </li>
+
+                <li  id="darkModeBtn" onclick="darkMode()" class="darkModeBtn" style="font-weight: bold;">
+                    Dark-Mode
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- navbar end-->
+
+
+
+<!-- popup start -->
+<div id="popup" class="popup">
+    <i onclick="popupClose()" id="popupClose" class="fa-solid fa-circle-xmark"></i>
+</div>
+<!-- popup end -->
+
+
+<!-- the first image start -->
+<div class="container-fluid bg-image d-flex align-items-center" 
+    style="background-image: url('img/hero4.png'); height: 90vh;" >
+    <div id="first-p-mp-off" class="ms-5 ps-5">
+        <p class="mb-5" style="font-size: 30px; color: black;">Trade-in-offer</p>
+        <h1 class="fw-bold mb-5" style="color: black;">Super value deals</h1>
+        <h1 class="fw-bold mb-5" style="color: #088178">On all products</h1>
+        <p style="color: gray; font-size: 25px">
+            save more with coupons & up to 70% off!
+        </p>
+
+        <div class="bg-image text-center pt-2" 
+            style="background-image: url('img/button.png'); width: auto; background-repeat: no-repeat;
+                    width: 230px; height: 70px;
+            ">
+            
+            <p  style="color: #088178; font-weight: bold">Shop Now</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- the first image end -->
+
+    <!-- first cards group start -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class=" card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f1.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #fddde4; color: #088178">
+                            Free Shipping
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class="card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f2.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #cdebbc; color: #088178">
+                            Online Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class="card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f3.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #d1e8f2; color: #088178">
+                            Save Money
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class="card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f4.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #cdd4f8; color: #088178">
+                            Promotions
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class="card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f5.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #f6dbf6; color: #088178">
+                            Happy Sell
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col first-cards d-flex justify-content-center">
+                <div class="card justify-content-center align-items-center pt-5"
+                    style="height: 300px; width: 300px; margin-bottom: 50px">
+                    <img src="img/f6.png" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <button class="btn" style="width: 250px; background-color: #fff2e5; color: #088178">
+                            F24/7 Support
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- first cards group end -->
+
+
+
+    <!-- featured products start -->
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div>
+            <center>
+                <h1 style="font-size: 60px; font-weight: bold; margin-top: 50px">
+                    Featured Products
+                </h1>
+                <p style="font-size: 20px; color: gray; margin-bottom: 50px">
+                    Summer Collection New Modern Design
+                </p>
+            </center>
+        </div>
+    </div>
+
+
+
+    <div class="container ">
+        <div class="row d-flex justify-content-center">
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f1.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">29.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f2.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">24.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f3.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">19.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f4.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">25.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f5.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">30.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f6.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">32.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f7.jpg" class="card-img-top" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Pants</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">30.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp m-3" style="width: 18rem">
+                <img src="img/f8.jpg" class="card-img" alt="img" />
+                <div class="card-body">
+                    <p style="color: gray;">odidos</p>
+                    <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <div class="amount-cart-div">
+                        <p style="font-weight: bold; font-size:20px; color:#088178;">36.99</p>
+                        <div class="cart-div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- featured products end -->
+
+
+    <!-- up to 70% off start -->
+    <div class="container-fluid bg-image text-center text-white" style="background-image: url('img/b2.jpg');">
+        <div>
+            <p class="mt-5 pt-5">Repair Serviced</p>
+            <h1 class="fw-bold mt-5 mb-5">Up to <span style="color: red;">70% Off</span>-All t-Sirts & Accessories</h1>
+            <button class="btn btn-light mb-5">Explore More</button>
+        </div>
+    </div>
+    <!-- up to 70% off end -->
+
+
+
+        <!-- new arrivals start -->
+
+        <div class="container-fluid d-flex justify-content-center">
+            <div>
+                <center>
+                    <h1 style="font-size: 60px; font-weight: bold; margin-top: 50px; margin-top: 100px;">
+                        New Arrival
+                    </h1>
+                    <p style="font-size: 20px; color: gray; margin-bottom: 50px">
+                        Summer Collection New Modern Design
+                    </p>
+                </center>
+            </div>
+        </div>
+    
+    
+    
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n1.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">19.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n2.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">19.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n3.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">15.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n4.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">16.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row d-flex justify-content-center">
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n5.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">10.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n6.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Pants</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">20.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n7.jpg" class="card-img-top" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">29.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wow animate__animated animate__flipInY card col-lg-3 col-md-6 col-sm-12 crd-fp" style="width: 18rem">
+                    <img src="img/n8.jpg" class="card-img" alt="img" />
+                    <div class="card-body">
+                        <p style="color: gray;">odidos</p>
+                        <h5 class="card-title" style="font-weight: bold;"> Shirt</h5>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="amount-cart-div">
+                            <p style="font-weight: bold; font-size:20px; color:#088178;">26.99</p>
+                            <div class="cart-div">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- new arrivals end -->
+
+
+
+            <!-- last cards start -->
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="wow animate__animated animate__flipInY col-lg-6 col-sm-12 mb-3">
+                <div class=" card lst-crd">
+                    <img src="img/b17.jpg" class="card-img" alt="img" height="350px">
+                    <div class="card-img-overlay last-cards mt-5 pt-5 ms-5">
+                        <p class="card-text text-light ">crazy deals</p>
+                        <h5 class="card-title text-light" style="font-weight: bold; font-size: 25px;">buy 1 get 1 free</h5>
+                        <p class="card-text text-light">The best classic dress is on sale at cara</p>
+                        <button class="btn btn-outline-light">Learn More</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col-lg-6 col-sm-12 mb-3">
+                <div class="card lst-crd">
+                    <img src="img/b10.jpg" class="card-img" alt="img" height="350px">
+                    <div class="card-img-overlay last-cards mt-5 pt-5 ms-5">
+                        <p class="card-text text-light">spring/summer</p>
+                        <h5 class="card-title text-light" style="font-weight: bold; font-size: 25px;">upcomming season</h5>
+                        <p class="card-text text-light">The best classic dress is on sale at cara</p>
+                        <button class="btn btn-outline-light">Collection</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="wow animate__animated animate__flipInY col-lg-6 col-sm-12 mb-3">
+                <div class="card lst-crd">
+                    <img src="img/b7.jpg" class="card-img" alt="img" height="350px">
+                    <div class="card-img-overlay last-cards mt-5 pt-5 ms-5">
+                        <h5 class="card-title text-light" style="font-weight: bold; font-size: 25px;">SEASONALSALE</h5>
+                        <p class="card-text" style="font-weight: bold; font-size: 20px; color:red;">Winter Collection-50% OFF</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wow animate__animated animate__flipInY col-lg-6 col-sm-12 mb-3">
+                <div class="card lst-crd">
+                    <img src="img/b4.jpg" class="card-img" alt="img" height="350px">
+                    <div class="card-img-overlay last-cards mt-5 pt-5 ms-5">
+                        <h5 class="card-title text-light" style="font-weight: bold; font-size: 25px;">NEW FOOTWEAR COLLECTION</h5>
+                        <p class="card-text" style="font-weight: bold; font-size: 20px; color:red;">Spring/Smmer 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="wow animate__animated animate__flipInY col-lg-6 col-sm-12 ">
+                <div class="card lst-crd">
+                    <img src="img/b18.jpg" class="card-img" alt="img" height="350px">
+                    <div class="card-img-overlay last-cards mt-5 pt-5 ms-5">
+                        <h5 class="card-title text-light" style="font-weight: bold; font-size: 25px;">T-SHIRTS</h5>
+                        <p class="card-text" style="font-weight: bold; font-size: 20px; color:red;">New Trendy Prints</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- last cards end -->
+
+
+
+    <!-- sign up for newsletters start -->
+
+    <div class="container-fluid sign-up-for-newsletters  mt-5 mb-5"
+        style="background-image: url('img/b14.png');background-repeat: no-repeat;background-position: 200px;">
+        <div class="one"  >
+            <h3>Sign Up For Newsletters</h3>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+
+        <div class="two">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <!-- sign up for newsletters end -->
+
+
+
+        <!-- footer start -->
+    
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img src="img/logo.png" alt="img" width="200px">
+                    <p style="font-weight: bold;" class="mt-5">Content</p>
+                    <p><span style="font-weight: bold;">Address: </span>562 Wellingtom Road, Street 32, San Francisco</p>
+                    <p><span style="font-weight: bold;">Phone: </span>+01 2222 365/(+9) 012345 6789</p>
+                    <p><span style="font-weight: bold;">Hours: </span>10:00 - 1800, Mon - Sat</p><br>
+                    <p style="font-weight: bold;">Follow Us</p>
+                    <div>
+                        <i class="footer-icons fa-brands fa-facebook-f"></i>
+                        <i class="footer-icons fa-brands fa-twitter"></i>
+                        <i class="footer-icons fa-brands fa-instagram"></i>
+                        <i class="footer-icons fa-brands fa-pinterest-p"></i>
+                        <i class="footer-icons fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p style="font-weight: bold;" class="mt-5">About</p>
+                    <p>About Us</p>
+                    <p>Delivery Information</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Contact Us</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p style="font-weight: bold;" class="mt-5">My Account</p>
+                    <p>Sign in</p>
+                    <p>View Vart</p>
+                    <p>My Wishlist</p>
+                    <p>Track My Order</p>
+                    <p>Help</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p style="font-weight: bold;" class="mt-5">Install App</p>
+                    <p>From App Store or Google Play</p>
+                    <div class="d-flex mb-3">
+                        <img src="img/app.jpg" alt="img" class="app">
+                        <img src="img/play.jpg" alt="img" class="app">
+                    </div>
+                    <p>SEcured Payment Gateway</p>
+                    <img src="img/pay.png" alt="img">
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="container mt-5 mb-5 d-flex justify-content-center align-items-center">
+            <p>	&#169; Ecommerce Company</p>
+        </div>
+        
+        <!-- footer end -->
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* on cart number look */
+.onCartNum{
+    display: inline-block;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+
+/* dark mode start*/
+.dark-mode{
+    background-color: #212529;
+    color: white;
+}
+
+.dark-nav{
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.dark-nav a{
+    color: white !important;
+}
+
+.darkModeBtn:hover{
+    cursor: pointer;
+    color: red;
+}
+/* dark mode end */
+
+
+
+/* popup start */
+.popup{
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    background-color: #088178;
+    border-radius: 10px;
+    z-index: 10;
+    width: 350px;
+    height: 500px;
+}
+
+#popupClose{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.block{
+    display: block !important;
+}
+/* popup end */
+
+
+/* cards details start*/
+.cart-div{
+    color: #088178;
+    background-color: #e8f6ea;
+    font-size: 20px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-star{
+    color: #f3b519;
+}
+
+.amount-cart-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.crd-fp{
+    margin: 20px;
+    border: #e8f6ea solid 2px; 
+    border-radius: 20px;
+    display: flex;
+}
+
+.crd-fp img{
+    border-radius: 20px;
+    margin: 10px;
+    width: 95% !important;
+    
+}
+
+/* cards details end*/
+
+
+
+.sign-up-for-newsletters{
+    background-color: #041e42;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.sign-up-for-newsletters .one h3{
+    color: white;
+    font-weight: bold;
+
+}
+
+.sign-up-for-newsletters .one p{
+    color: #818e97;
+}
+
+.sign-up-for-newsletters .one p span{
+    color: #e78b3b;
+}
+
+.sign-up-for-newsletters .two input{
+    width: 400px;
+    height: 60px;
+    padding-left: 15px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.sign-up-for-newsletters .two button{
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #088178;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+}
+
+.footer-icons{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.app{
+    border: 2px solid #088178;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+@media (max-width: 1124px){
+    .sign-up-for-newsletters{
+        display: inline-block;
+    }
+
+    .sign-up-for-newsletters .two input{
+        width: 250px;
+        height: 50px;
+    }
+
+    .sign-up-for-newsletters .two button{
+        width: 70px;
+        height: 50px;
+    }
+}
